@@ -1,5 +1,6 @@
 :root {
   --main-color: #7630FF;
+  --link-color: #7630FF;
 }
 
 * {
@@ -11,6 +12,11 @@ body {
   overflow: auto;
   user-select: none;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color)
 }
 
 .home {
