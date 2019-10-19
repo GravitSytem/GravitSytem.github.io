@@ -1,16 +1,26 @@
+:root {
+  --main-color: #7630FF;
+}
+
+* {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #000;
   overflow: auto;
   user-select: none;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
 .home {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
   position: absolute;
-  top: 10%;
-  bottom: 10%;
+  top: 10px;
+  bottom: 10px;
   left: 10%;
   right: 10%;
   color: white;
@@ -19,4 +29,71 @@ body {
 .home img {
   width: 20%;
   margin: 50px;
+}
+
+.home h3 {
+  font-size: 2.92rem;
+  line-height: 110%;
+  margin: 1.9466666667rem 0 1.168rem 0;
+  font-weight: 400;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 70%;
+  }
+}
+
+.quote {
+  font-style: italic;
+}
+
+.btn {
+  display: inline-block;
+  height: 36px;
+
+  font-size: 14px;
+  outline: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 36px;
+
+  color: #fff;
+  background-color: var(--main-color);
+
+  border: none;
+  border-radius: 2px;
+
+  padding: 0 16px;
+  margin: 0;
+}
+
+@media (max-width: 1250px) {
+  .home img {
+    width: 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .home img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 700px) {
+  .home img {
+    width: 60%;
+  }
 }
